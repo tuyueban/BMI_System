@@ -1,3 +1,5 @@
+#LSTM预测模型
+
 import pickle
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import LSTM, Dense
@@ -403,4 +405,5 @@ def predict_future_lstm(df: pd.DataFrame, model=None, scalers=None, days: int = 
         "start_weight": round(last_weight, 1),
         "end_weight": preds[-1]['weight'] if preds else None,
         "weight_change": round(preds[-1]['weight'] - last_weight, 1) if preds else None,
+
     }
