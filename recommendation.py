@@ -1,3 +1,5 @@
+#建议函数
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
@@ -173,4 +175,5 @@ def generate_current_recommendation(df, target_weight):
         return f"💪 需要减重 {weight_diff:.1f}kg，建议控制饮食并增加运动"
     else:
         return f"💪 需要增重 {abs(weight_diff):.1f}kg，建议增加蛋白质摄入和力量训练"
+
 
