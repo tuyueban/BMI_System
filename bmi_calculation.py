@@ -1,3 +1,5 @@
+#BMI计算及分类
+
 from typing import Tuple
 import pandas as pd
 import numpy as np
@@ -26,5 +28,6 @@ def calculate_bmr(weight_kg, height_cm, age, sex):
         return 10 * weight_kg + 6.25 * height_cm - 5 * age + 5
     else:
         return 10 * weight_kg + 6.25 * height_cm - 5 * age - 161
+
 
 
