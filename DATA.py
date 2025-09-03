@@ -1,3 +1,6 @@
+#常量和保存地址
+
+
 import os
 
 BMR_COEFFICIENT = 1.3
@@ -108,4 +111,5 @@ def get_scaler_file(username=None):
 
 # 用户配置文件
 def get_user_config_file(username=None):
+
     return get_user_file(username, "user_config.pkl")
