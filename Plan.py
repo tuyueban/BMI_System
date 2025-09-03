@@ -1,3 +1,5 @@
+#添加饮食计划和锻炼计划
+
 import pandas as pd
 import streamlit as st
 import requests
@@ -125,5 +127,6 @@ def search_food(query):
                         })
             except Exception as e:
                 st.error(f"搜索失败: {e}")
+
 
         return results
